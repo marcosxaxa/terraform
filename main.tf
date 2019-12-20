@@ -74,6 +74,15 @@ resource "aws_s3_bucket" "dev4" {
   }
 }
 
+resource "aws_s3_bucket" "homologacao" {
+  bucket = "marcosxaxa-homologacao"
+  acl    = "private"
+
+  tags = {
+    Name = "marcosxaxa-hom"
+  }
+}
+
 resource "aws_dynamodb_table" "dynamodb-homologacao" {
   name           = "GameScores"
   billing_mode   = "PAY_PER_REQUEST"
