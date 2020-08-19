@@ -1,2 +1,3 @@
 terraform*
 .terraform
+lab_test/lab_test_key*
